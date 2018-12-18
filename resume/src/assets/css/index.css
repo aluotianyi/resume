@@ -2,7 +2,16 @@ h1,h2,html,body {
     height: 100%;
     margin:0;
     padding:0;
+    overflow-y:hidden;
+
 }
+html { font-size:100px; }
+@media(max-width:540px){ html { font-size:84.375px; } } /*Android常用宽度*/
+@media(max-width:480px){ html { font-size:75px; } }		/*Android常用宽度*/
+@media(max-width:414px){ html { font-size:64.69px; } }  /*i6Plus,i7Plus宽度*/
+@media(max-width:375px){ html { font-size:58.59px; } }	/*i6,i7宽度*/
+@media(max-width:360px){ html { font-size:56.25px; } }	/*Android常用宽度*/
+@media(max-width:320px){ html { font-size:0.5rem; } }
 #canvas{
     height:100%;
     width:100%;
@@ -26,14 +35,14 @@ h1,h2,html,body {
 .section-one-info h1{
     padding-bottom:30px;
     text-align: center;
-    background: -webkit-linear-gradient(#3B2667, #38495a);
+    background: -webkit-radial-gradient(white, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .section-one-text{
     text-align: center;
     width: 271px;
-    background: -webkit-linear-gradient(#3B2667, #32526E);
+    background: -webkit-radial-gradient(white, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -42,8 +51,8 @@ h1,h2,html,body {
     top:50%;
     transform: translate(-50%,-50%);
     position:relative;
-    width:100px;
-    height:100px;
+    width:1rem;
+    height:1rem;
     transform-origin: 0% 0%;
     -webkit-transform-origin:0% 0%;
     transform-style:preserve-3d;
@@ -110,77 +119,40 @@ h1,h2,html,body {
     cursor:pointer;
     position:absolute;
     display:block;
-    height:100px;
-    width:100px;
-    line-height: 100px;
+    height:1rem;
+    width:1rem;
+    line-height: 1rem;
     text-align: center;
-    font-size:25px;
+    font-size:0.25rem;
     font-family: 华文彩云;
-    border:1px solid black;
 }
 .side1{
     background: -webkit-radial-gradient(white, #38495a);
-    -webkit-transform:translateZ(50px);
-    transform:translateZ(50px);
+    -webkit-transform:translateZ(0.5rem);
+    transform:translateZ(0.5rem);
 }
 .side2{
     background: -webkit-radial-gradient(white, #38495a);
-    -webkit-transform:rotateY(90deg) translateZ(50px);
-    transform:rotateY(90deg) translateZ(50px);
+    -webkit-transform:rotateY(90deg) translateZ(0.5rem);
+    transform:rotateY(90deg) translateZ(0.5rem);
 }
 .side3{
     background: -webkit-radial-gradient(white, #38495a);
-    -webkit-transform:rotateY(180deg) translateZ(50px);
-    transform:rotateY(180deg) translateZ(50px);
+    -webkit-transform:rotateY(180deg) translateZ(0.5rem);
+    transform:rotateY(180deg) translateZ(0.5rem);
 }
 .side4{
     background: -webkit-radial-gradient(white, #38495a);
-    -webkit-transform:rotateY(270deg) translateZ(50px);
-    transform:rotateY(270deg) translateZ(50px);
+    -webkit-transform:rotateY(270deg) translateZ(0.5rem);
+    transform:rotateY(270deg) translateZ(0.5rem);
 }
 .side5{
     background: -webkit-radial-gradient(white, #38495a);
-    -webkit-transform:rotateX(90deg) translateZ(50px);
-    transform:rotateX(90deg) translateZ(50px);
+    -webkit-transform:rotateX(90deg) translateZ(0.5rem);
+    transform:rotateX(90deg) translateZ(0.5rem);
 }
 .side6{
     background: -webkit-radial-gradient(white, #38495a);
-    -webkit-transform:rotateX(270deg) translateZ(50px);
-    transform:rotateX(270deg) translateZ(50px);
-}
-.container-one{
-    background: black;
-    opacity: 0.4;
-}
-.container-two{
-    background: lightslategray;
-    opacity: 0.5;
-}
-.container-three{
-    background: aliceblue;
-    opacity: 0.5;
-}
-.menu-box{
-    position: fixed;
-    right:70px;
-    top:50%;
-    z-index:999;
-}
-.menu-box ul{
-    list-style: none;
-}
-.menu-box ul li a{
-    margin:10px 0px;
-    display: block;
-    text-decoration: none;
-    width:14px;
-    height:14px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    background: white;
-    transition: 0.5s all;
-}
-.menu-box ul li a:hover{
-    transform: scale(1.1,1.1);
+    -webkit-transform:rotateX(270deg) translateZ(0.5rem);
+    transform:rotateX(270deg) translateZ(0.5rem);
 }

@@ -1,23 +1,15 @@
 <template>
-    <router-view></router-view>
+    <div id="app">
+        <keep-alive>
+            <router-view></router-view>
+        </keep-alive>
+    </div>
 </template>
 <script>
-    import redirect from './assets/js/common';
-    export default {
-        mounted() {
-            redirect();
-        }
-    }
+    export default {}
 </script>
 <style scoped>
     #app{
-        height: 100%;
-    }
-    .page-container {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
+        font-size: 16px;
     }
 </style>
